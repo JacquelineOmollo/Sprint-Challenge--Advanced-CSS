@@ -279,6 +279,7 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img .walker {
     width: 90%;
+    orientation: portrait;
   }
   .home .walk .walk-img img {
     width: 100%;
