@@ -57,8 +57,20 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-direction: column-reverse;
+      align-items: center;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
     .walk-text {
       width: 50%;
+
+      @media @phone {
+        widows: 90%;
+        justify-content: space-evenly;
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -73,7 +85,7 @@
       }
       @media @phone {
         button {
-          width: 200%;
+          width: 100%;
         }
       }
     }
@@ -83,7 +95,7 @@
       margin-left: 4%;
 
       @media @phone {
-        width: 200%;
+        width: 90%;
       }
 
       img {
