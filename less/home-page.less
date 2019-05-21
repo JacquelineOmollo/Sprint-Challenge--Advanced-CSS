@@ -70,11 +70,10 @@
 
       .btn {
         .button;
-
-        @media @phone {
-          .btn {
-            width: 90%;
-          }
+      }
+      @media @phone {
+        button {
+          width: 200%;
         }
       }
     }
@@ -84,17 +83,15 @@
       margin-left: 4%;
 
       @media @phone {
-        .walker {
-          width: 90%;
-          orientation: portrait;
-        }
+        width: 200%;
+      }
 
-        img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
-        }
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
       }
     }
   }
-} // home
+}
+// home
