@@ -183,6 +183,7 @@ p {
   color: #23293b;
   padding-left: 15px;
   padding-right: 15px;
+  margin-top: 10px;
 }
 .nav-container .logo {
   display: flex;
@@ -198,6 +199,9 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  overflow: hidden;
 }
 .home .intro h2 {
   padding: 15px;
@@ -264,17 +268,21 @@ footer {
   background: #48547a;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    max-width: 90%;
-    overflow-x: hidden;
+  .home .walk .walk-text .btn .btn {
+    width: 90%;
   }
 }
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
 }
-.home .walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+@media (max-width: 500px) {
+  .home .walk .walk-img .walker {
+    width: 90%;
+  }
+  .home .walk .walk-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
 }
